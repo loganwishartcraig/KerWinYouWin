@@ -1,0 +1,157 @@
+@media screen and (max-width: 700px) {
+  
+  h1 {
+    font-size: 2.25em;
+  }
+
+  h2 {
+    font-size: 1.65em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  button {
+    font-size: 1.5em !important;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .mobileShow {
+    display: initial;
+  }
+  .intro-img-cont {
+    padding-top: 0;
+
+  }
+
+  .intro-img {
+    width: 100%;
+    border: 0;
+    border-radius: 0px
+  }
+
+
+  .biography-content {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .bio-text {
+    padding: 1em;
+    font-size: 1.05em;
+  }
+
+  .biography-content > .col-1{
+    width: 100%;
+  }
+
+  .biography-content > .col-2{
+    width: 100%;
+  }
+
+
+  .cta-btn-1, .cta-btn-2 {
+    display: block;
+    margin: 0 auto;
+    padding: 1em 0;
+  }
+
+  .cta-btn-1.cta-donate {
+    margin-right: auto !important;
+  }  
+
+  .cta-btn-2.cta-donate {
+    margin-right: auto !important;
+  }  
+
+  .cta-btn-1.cta-volunteer {
+    margin-top: 1.5em;
+  }  
+
+  .cta-btn-2.cta-volunteer {
+    margin-top: 1.5em;
+  }  
+
+  .dream-img-bg > h1 {
+    padding: .5em 0;
+    bottom: 0;
+  }
+
+  .points-container {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .point-content {
+    width: 100%;
+  }
+
+
+  .cta-2-container {
+    padding-bottom: 7em;
+  }
+
+   .cta-2-container {
+    height: 795px;
+  }
+
+  .volunteer-content {
+    top: 40px;
+    -webkit-transform: initial;
+        -ms-transform: initial;
+            transform: initial;
+    height: 85%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .volunteer-form > ul {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3em;
+  }
+
+  .volunteer-form > ul > li > label {
+    max-width: 100%;
+  }
+
+  .volunteer-form > ul > li > input {
+    padding: .75em .35em;
+    max-width: 100%;
+  }
+
+  .volunteer-submit {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
+  }
+
+  .volunteer-close-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    padding: 0 !important;
+    text-align: cnter;
+    width: 40%;
+    color: #D0D0D0;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+}
+
+@media screen and (max-width: 405px) {
+  .footer {
+    display: none;
+  }
+
+
+}

@@ -1,0 +1,108 @@
+  
+h1 {
+  font-size: 40px;
+}
+
+.update-warning {
+  display: block !important;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  padding: 3em 0;
+  background-color: #F7F747;
+  z-index: 10;
+  text-align: center;
+}
+
+.update-warning > span {
+  margin: 30px 0;
+  font-size: 30px;
+  font-weight: 400;
+  color: #F30A0A;
+  line-height: 35px;
+}
+
+.upgrade-link {
+  color: blue;
+}
+
+.volunteer-container {
+    z-index: 12;
+}
+
+.volunteer-content {
+  top: auto;
+  margin-top: 2em;
+}
+
+
+.page-wrapper {
+  position: relative;
+  overflow: auto;
+  padding-bottom: 45em;
+  margin-bottom: 10em;
+}
+
+.biography-content {
+  overflow: hidden;
+}
+
+.biography-content > .col-1 {
+  float: left;
+}
+
+.biography-content > .col-2 {
+  float: left;
+}
+
+
+
+.cta-1-container {
+  margin-top: 5em;
+}
+
+
+.cta-btn-1.cta-donate {
+  margin-right: 2em;
+}
+
+.dream-img-bg > h1 {
+  background: #292929;
+}
+
+.point-img-wrapper {
+  float: left;
+}
+
+.point-img-contianer {
+  overflow: auto;
+}
+
+.point-content {
+  float: left;  
+}
+
+
+.cta-2-wrapper {
+  bottom: 0;
+  top: auto !important;
+  background: #292929;
+  padding-bottom: 8em
+}
+
+.cta-2-wrapper > h1 {
+  margin-bottom: 0;
+}
+
+.cta-btn-2.cta-donate {
+  margin-right: 2em;
+}
+
+.cta-btn-2 {
+  margin-top: 2em;
+}
+
+.footer {
+  border-top: 1px solid #1c1c1c;
+}

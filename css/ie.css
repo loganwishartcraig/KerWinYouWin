@@ -1,0 +1,28 @@
+.cta-btn-1 {
+  padding: .55em 0 !important;
+}
+
+.volunteer-container {
+  padding-top: 5em;
+}
+
+.biography-content > .col-1 {
+  display: inline-block;
+}
+
+.biography-content > .col-2 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.point-img-contianer {
+  text-align: center;
+}
+
+.point-img-wrapper {
+  display: inline-block;
+}
+
+.point-content {
+  display: inline-block;
+}
