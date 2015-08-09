@@ -79,10 +79,16 @@ h1 {
   overflow: auto;
 }
 
-.point-content {
-  float: left;  
+
+.points-container {
+    display: table;
+    table-layout: fixed;
 }
 
+.point-content {
+  display: table-cell;
+  vertical-align: top;
+}
 
 .cta-2-wrapper {
   bottom: 0;

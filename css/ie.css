@@ -23,6 +23,12 @@
   display: inline-block;
 }
 
+.points-container {
+    display: table;
+    table-layout: fixed;
+}
+
 .point-content {
-  display: inline-block;
+  display: table-cell;
+  vertical-align: top;
 }

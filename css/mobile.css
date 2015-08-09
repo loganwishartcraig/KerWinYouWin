@@ -16,13 +16,18 @@
     font-size: 1.5em !important;
   }
 
-  .mobile-hide {
+  .mobileHide {
     display: none;
   }
 
   .mobileShow {
     display: initial;
   }
+
+  .point-content > h2 {
+    display: block;
+  }
+  
   .intro-img-cont {
     padding-top: 0;
 
@@ -82,11 +87,18 @@
     bottom: 0;
   }
 
+  .points-wrapper {
+    padding-top: 0;
+    background: none;
+  }
+
   .points-container {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
+
+
 
   .point-content {
     width: 100%;

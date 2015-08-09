@@ -2,139 +2,163 @@
 <html>
 
 <head>
-  <title>Kerwin You Win</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-  <link rel='stylesheet' href='css/index.css' type='text/css'>
-  <link rel='stylesheet' href='css/mobile.css' type='text/css'>
-
-  <!--[if gte IE 9]>
+    <title>Kerwin You Win</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='css/index.css' type='text/css'>
+    <link rel='stylesheet' href='css/mobile.css' type='text/css'>
+    <!--[if gte IE 9]>
     <link href='css/ie.css' rel='stylesheet' type='text/css'>
   <![endif]-->
-  <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
     <link href='css/legacy.css' rel='stylesheet' type='text/css'>
   <![endif]-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="js/volunteer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/volunteer.js"></script>
 </head>
 
 <body>
-  <div class="volunteer-container" id='vol-content'>
-    <div class="volunteer-content">
-      <img class='volunteer-close mobile-hide' src='images/x-btn.png' alt="close" id="vol-close">
-      <h2>- Join The Cause -</h2>
-      <span class="volunteer-subhead" id="vol-subhead">Enter your information below and we'll get in touch</span>
-      <script type="text/javascript">
-      var submitted = false;
-      </script>
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='';}"></iframe>
-      <h3 class="volunteer-thnx" id="vol-thanks">Thank you! We'll be in touch soon.</h3>
-      <form class="volunteer-form" action="https://docs.google.com/forms/d/15aFUCtJSwAQqyFbYC0MYmyJhwMBIbvWa346SUEFGLaE/formResponse" method="POST" target="hidden_iframe" id="vol-form">
-        <ul id="vol-form-qtns">
-          <li>
-            <label>Email Address</label>
-            <input type="email" placeholder="example@domain.com" name="entry.92248324" value="" dir="auto" aria-label="Email  " required>
-          </li>
-          <li>
-            <label>First Name</label>
-            <input type="text" placeholder="Jane/John" name="entry.1428500518" value="" dir="auto" aria-label="First Name  " required>
-          </li>
-          <li>
-            <label>Last Name</label>
-            <input type="text" placeholder="Doe" name="entry.101417917" value="" dir="auto" aria-label="Last Name  " required>
-          </li>
-          <li>
-            <label>Phone Number</label>
-            <input type="text" placeholder="10 digits" name="entry.48602814" value="" dir="auto" aria-label="Phone Number  " required>
-          </li>
-        </ul><!--
+    <div class="volunteer-container" id='vol-content'>
+        <div class="volunteer-content">
+            <img class='volunteer-close mobileHide' src='images/x-btn.png' alt="close" id="vol-close">
+            <h2>- Join The Cause -</h2>
+            <span class="volunteer-subhead" id="vol-subhead">Enter your information below and we'll get in touch</span>
+            <script type="text/javascript">
+            var submitted = false;
+            </script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='';}"></iframe>
+            <h3 class="volunteer-thnx" id="vol-thanks">Thank you! We'll be in touch soon.</h3>
+            <form class="volunteer-form" action="https://docs.google.com/forms/d/15aFUCtJSwAQqyFbYC0MYmyJhwMBIbvWa346SUEFGLaE/formResponse" method="POST" target="hidden_iframe" id="vol-form">
+                <ul id="vol-form-qtns">
+                    <li>
+                        <label>Email Address</label>
+                        <input type="email" placeholder="example@domain.com" name="entry.92248324" value="" dir="auto" aria-label="Email  " required>
+                    </li>
+                    <li>
+                        <label>First Name</label>
+                        <input type="text" placeholder="Jane/John" name="entry.1428500518" value="" dir="auto" aria-label="First Name  " required>
+                    </li>
+                    <li>
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Doe" name="entry.101417917" value="" dir="auto" aria-label="Last Name  " required>
+                    </li>
+                    <li>
+                        <label>Phone Number</label>
+                        <input type="text" placeholder="10 digits" name="entry.48602814" value="" dir="auto" aria-label="Phone Number  " required>
+                    </li>
+                </ul><!--
         --><div class="volunteer-submit">
-          <button class="volunteer-submit-btn" type="submit" id="vol-submt-btn">Submit</button>
-          <span class="volunteer-close-btn mobileShow" type="submit" id="vol-close-btn">Close</span>
+                    <button class="volunteer-submit-btn" type="submit" id="vol-submt-btn">Submit</button>
+                    <span class="volunteer-close-btn mobileShow" type="submit" id="vol-close-btn">Close</span>
+                </div>
+            </form>
         </div>
-      </form>
+        <div class="overlay"></div>
     </div>
-    <div class="overlay"></div>
-  </div>
-  <div class='page-wrapper'>
-    <header>
-      <div class='intro-img-cont'>
-        <!--<img class='intro-img' src='images/header_img_hd.jpg' srcset='images/header_img_sd.jpg 1x, images/header_img_hd.jpg 2x, images/header_img_mb.jpg 1w, images/header_img_sd.jpg 643w, images/header_img_hd.jpg 1286w' alt='Vote Kerwin, You Win' />-->
-        <img class='intro-img' src='images/TEST_HEAD.jpg' />
-      </div>
-    </header>
-    <section class='biography'>
-      <div class='biography-content'>
-        <div class='col-1'>
-          <img class='bio-img' src='images/bio_img_hd.jpg' srcset='images/bio_img_hd.jpg 1x, images/bio_img_sd.jpg 1w, images/bio_img_hd.jpg 340w' alt="Sam Kerin Has Your Interest In Mind">
-          <span class='bio-img-subhead mobile-hide'>Sam Kerwin: Putting the Community Back Together</span>
-        </div><!--
+    <div class='page-wrapper'>
+        <header>
+            <div class='intro-img-cont'>
+                <!--<img class='intro-img' src='images/header_img_hd.jpg' srcset='images/header_img_sd.jpg 1x, images/header_img_hd.jpg 2x, images/header_img_mb.jpg 1w, images/header_img_sd.jpg 643w, images/header_img_hd.jpg 1286w' alt='Vote Kerwin, You Win' />-->
+                <img class='intro-img' src='images/TEST_HEAD.jpg' />
+            </div>
+        </header>
+        <section class='biography'>
+            <div class='biography-content'>
+                <div class='col-1'>
+                    <img class='bio-img' src='images/bio_img_hd.jpg' srcset='images/bio_img_hd.jpg 1x, images/bio_img_sd.jpg 1w, images/bio_img_hd.jpg 340w' alt="Sam Kerin Has Your Interest In Mind">
+                    <span class='bio-img-subhead mobileHide'>Sam Kerwin: Putting the Community Back Together</span>
+                </div><!--
         --><div class='col-2'>
-          <p class='bio-text'>Sam Kerwin was born and raised in the Fair West Neighborhood on the western edge of the International District. He attended Zia Elementary and Jefferson Middle School before graduating from Albuquerque High. Growing up in Albuquerque has given Sam a unique homegrown perspective on the challenges facing our city. The City of Albuquerque is full of potential, but systemic problems plague our neighborhoods. A homeless population with no permanent solution, children growing up in poverty depraved of the education they need to reach their true potential, dilapidated shopping centers and empty lots allowed to stand without improvement for years on end. Sam Kerwin is running because he loves this city and he is tired of seeing these issues ignored. It is time our neighborhoods receive the attention they deserve. It's time we become invested in improving this area of town.
-            <br>
-            <br> It's time we elect Sam Kerwin to usher in positive change.
-            <br>
-            <br> Sam Kerwin's opponents are career politicos, they are running to push their own agendas. Sam Kerwin is running to push <em>yours</em>. A vote for Kerwin, is a vote for <em>your</em> ideas, <em>your</em> priorities, and <em>your</em> solutions. Sam is a true believer that the key to creating a stronger economy starts by building a stronger local community. Be part of that community and let's build our future together!
-          </p>
-        </div><!--
+                    <p class='bio-text'>Sam Kerwin was born and raised in the Fair West Neighborhood on the western edge of the International District. He attended Zia Elementary and Jefferson Middle School before graduating from Albuquerque High. Growing up in Albuquerque has given Sam a unique homegrown perspective on the challenges facing our city. The City of Albuquerque is full of potential, but systemic problems plague our neighborhoods. A homeless population with no permanent solution, children growing up in poverty depraved of the education they need to reach their true potential, dilapidated shopping centers and empty lots allowed to stand without improvement for years on end. Sam Kerwin is running because he loves this city and he is tired of seeing these issues ignored. It is time our neighborhoods receive the attention they deserve. It's time we become invested in improving this area of town.
+                        <br>
+                        <br> It's time we elect Sam Kerwin to usher in positive change.
+                        <br>
+                        <br> Sam Kerwin's opponents are career politicos, they are running to push their own agendas. Sam Kerwin is running to push <em>yours</em>. A vote for Kerwin, is a vote for <em>your</em> ideas, <em>your</em> priorities, and <em>your</em> solutions. Sam is a true believer that the key to creating a stronger economy starts by building a stronger local community. Be part of that community and let's build our future together!
+                    </p>
+                </div><!--
     --></div>
-    </section>
     <div class='cta-1-container'>
-      <button class='cta-btn-1 cta-donate'>- Donate -</button>
-      <button class='cta-btn-1 cta-volunteer' id="cta-vol-1">- Volunteer -</button>
-    </div>
-    <div class='dream-container'>
-      <div class='dream-img-bg'>
-        <h1 class="test">- Sam Stands For -</h1>
-      </div>
-    </div>
-    <div class="point-img-contianer">
-      <div class="point-img-wrapper">
-      </div><!--
-      --><div class="point-img-wrapper">
-      </div><!--
-      --><div class="point-img-wrapper">
-      </div><!--
-    --></div>
-    <section class='points-container'>
-      <div class='point-content one'>
-        <h2 class="italic">You cannot snore and dream <span class="bold">at the same time</span>.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-      </div><!--
-      --><div class='point-content two'>
-        <h2 class="italic">You cannot snore and dream <span class="bold">at the same time</span>.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-      </div><!--
-      --><div class='point-content three'>
-        <h2 class="italic">You cannot snore and dream <span class="bold">at the same time</span>.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-      </div><!--
-    --></section>
-    <section class="cta-2-container">
-      <div class="cta-2-wrapper">
-        <h1>Support the Kerwin Cause</h1>
-        <div class="cta-content">
-          <p class="cta-txt">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis , consectetur adipisicing elit, sed do eiusmod
-          </p>
-          <button class='cta-btn-2 cta-donate'>- Donate -</button>
-          <button class='cta-btn-2 cta-volunteer' id="cta-vol-2">- Volunteer -</button>
+            <button class='cta-btn-1 cta-donate'>- Donate -</button>
+            <button class='cta-btn-1 cta-volunteer' id="cta-vol-1">- Volunteer -</button>
         </div>
-      </div>
-      <div class='footer'>
-        <div class='footer-content'>
-          <div class='footer-logo-placeholder'></div><!--
+        </section>
+        
+        <div class='dream-container'>
+            <div class='dream-img-bg'>
+                <h1 class="test">- Sam Stands For -</h1>
+            </div>
+        </div>
+        <div class="point-img-contianer">
+          <div class="point-img-wrapper">
+            <img class="point-img" src="images/childhood-img.png">
+              </div><!--
+        --><div class="point-img-wrapper">
+              <img class="point-img" src="images/shelter-img.png">
+            </div><!--
+        --><div class="point-img-wrapper">
+              <img class="point-img" src="images/parks-img.png">
+            </div><!--
+    --></div>
+        <section class='points-wrapper'>
+        <div class='point-headers mobileHide'>
+          <h2 class="one italic">Invest in <span class="bold">Early Childhood Education</span>.</h2>
+          <h2 class="two italic">Find Permanent <span class="bold">Shelters for the Homeless</span>.</h2>
+          <h2 class="three italic">Fill Vacant Dirt Lots into <span class="bold">Small Parks</span> and <span class="bold">Community Gardens</span>.</h2>
+        </div>
+        <div class='points-container'>
+            <div class='point-content one'>
+                <h2 class="italic mobileShow">Invest in <span class="bold">Early Childhood Education</span>.</h2>
+                <p>Albuquerque families are blessed with having a wide variety of childcare options. However, many families are priced out of sending their children to top quality early childhood education child care. This problem especially effectives poor, working class, and families of color. But it also effectives our entire city and state over the long term. If children are not giving the right conditions to develop cognitive skills, social abilities and healthy behaviors in the earliest years of life, it becomes increasingly challenging to develop the same skills later on. These are the very skills that help people get jobs later in life and become engaged members of the community.
+                    <br>
+                    <br> Investing in early childhood education pays for itself when you compare it to the cost the city and state will have to endure due to the adverse effects of not educating children early on. Intervening in a child's education results in less remediation, fewer high school dropouts, less criminal activity, and a higher educated workforce. The National Institute for Early Childhood Education Research estimates that the return on investment is 7 dollars for every 1 dollar spent on early childhood education. The city of Albuquerque has proven that they can provide quality early childhood education, so why not continue to do so by opening 5 to 10 more preschools in strategic locations.</p>
+            </div><!--
+      --><div class='point-content two'>
+                <h2 class="italic mobileShow">Find Permanent <span class="bold">Shelters for the Homeless</span>.</h2>
+                <p>Homelessness is a major issue in Albuquerque. The truth is it costs the city less to house the homeless than it does to pay for emergency services or to pay for keeping our homeless locked up in our jails.
+                    <br>
+                    <br> One existing program run by the City of Albuquerque, Heading Home, has found that it costs the city 31.6% less to house the homeless than it does to pay for emergency bills generated by them living on the street.
+                    <br>
+                    <br> There are currently many programs serving lots of different niches within the homeless community. But all of these programs have different eligibility requirements in order to house a person. Sadly, there is no program where the only requirement to be housed is that you don't have a home. Lots of great work is being done to serve the least fortunate and most vulnerable members of our society. However, anyone living in the city knows we are a long way from eradicating homelessness.
+                    <br>
+                    <br> Housing the homeless has proven to be cost effective, it's time we fund these programs to the point where we no longer see people sleeping in the alley. We all benefit when we take care of the least fortunate in our city.
+                </p>
+            </div><!--
+      --><div class='point-content three'>
+               <h2 class="italic mobileShow">Fill Vacant Dirt Lots into <span class="bold">Small Parks</span> and <span class="bold">Community Gardens</span>.</h2>
+                <p>Walking around I see a lot of vacant dirt lots. It is a blight that has been bothering me for years. My vision is to fill in these dirt lots with small parks and community gardens: Little green spaces for everyone to enjoy. Small pockets where people can go to escape the stresses of a hectic urban life. Plant life helps decrease stress and increase the quality of life for everyone. Beautifying the city has a profound effect on people's psyches.
+                    <br>
+                    <br>To be honest these dirt lots can produce a lot more than just goat heads and tumbleweeds. Why not turn them into places where we can grow food, and spend time with our family, friends and neighbors. By planting perennial fruit and vegetables we can create small edible forests right in the heart of the city.
+                    <br>
+                    <br>There are so many vacant dirt lots that we can really get creative with their use. How about a zen garden? Or a sculpture garden? A butterfly garden? Or a simple xeriscape garden? Because these parks are so small and numerous their possible implementations are near limitless.
+                </p>
+            </div><!--
+      --></div>
+    </section>
+        <section class="cta-2-container">
+            <div class="cta-2-wrapper">
+                <h1>Support the Kerwin Cause</h1>
+                <div class="cta-content">
+                    <p class="cta-txt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis , consectetur adipisicing elit, sed do eiusmod
+                    </p>
+                    <button class='cta-btn-2 cta-donate'>- Donate -</button>
+                    <button class='cta-btn-2 cta-volunteer' id="cta-vol-2">- Volunteer -</button>
+                </div>
+            </div>
+            <div class='footer'>
+                <div class='footer-content'>
+                    <div class='footer-logo-placeholder'></div><!--
           --><h4 class='footer-header'>Paid for by the Committee to Elect Sam Kerwin for City Council. Treasurer Joe DeBonis</h4><!--
           --><ul class='footer-list'>
-            <li>email</li>
-            <li>phone</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+                        <li>email</li>
+                        <li>phone</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
     <div class="update-warning">
-      <span>Looks like you're using an outdated browser.<br>Please <a class="upgrade-link" href="http://www.google.com/chrome/">upgrade</a> your browser and reload the site</span>
+        <span>Looks like you're using an outdated browser.<br>Please <a class="upgrade-link" href="http://browsehappy.com/">upgrade</a> your browser and reload the site</span>
     </div>
     <!--[if lt IE 9]>
       <script src="js/fixVsol.js"></script>
