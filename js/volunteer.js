@@ -1,8 +1,7 @@
 $(document).ready(function() {
 
-  console.log('loaded');
-
-  $(".cta-volunteer").click(function() {
+  $(".cta-volunteer").click(function(evt) {
+        evt.preventDefault();
         console.log("btn clicked");
 
     $(".volunteer-container").fadeIn(300);

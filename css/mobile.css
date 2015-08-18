@@ -1,3 +1,15 @@
+@media screen and (max-width: 895px) {
+  .dream-img-bg > h1 {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .footer {
+  display: none;
+}
+}
+
 @media screen and (max-width: 700px) {
   
   h1 {
